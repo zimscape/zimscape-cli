@@ -7,7 +7,6 @@ Zimscape-CLI Docs
 
 The Zimscape CLI used to manage development environments on https://zimscape.com
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/zimscape-cli.svg)](https://npmjs.org/package/zimscape-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/zimscape-cli.svg)](https://npmjs.org/package/zimscape-cli)
 [![License](https://img.shields.io/npm/l/zimscape-cli.svg)](https://github.com/vuskhoza/zimscape-cli/blob/master/package.json)
