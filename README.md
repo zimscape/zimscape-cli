@@ -1,7 +1,7 @@
 # zimscape-cli
 The Zimscape CLI Issue Repo
 
-Welcome to the public issues repo for the Zimscape CLI. Feel free to create valid issues and we'll get right to them. Take note of the available issue templates for concise troubleshooting.
+Welcome to the public issues repo for the Zimscape CLI. Feel free to create valid issues and we'll get right to them. Take note of the available issue templates for straight tot the point collaboration.
 
 Zimscape-CLI Docs
 =================
