@@ -20,100 +20,76 @@ The Zimscape CLI used to manage development environments on https://zimscape.com
 <!-- usage -->
 ```sh-session
 $ npm install -g zimscape-cli
-$ zimscape COMMAND
+$ zimscape [COMMAND] [ARGS]
 running command...
 $ zimscape (-v|--version|version)
-zimscape-cli/0.0.5 linux-x64 node-v11.10.1
+zimscape-cli/0.0.1 linux-x64 node-v11.10.1
 $ zimscape --help [COMMAND]
-USAGE
-  $ zimscape COMMAND
 ...
 ```
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`zimscape help [COMMAND]`](#zimscape-help-command)
 * [`zimscape login`](#zimscape-login)
-* [`zimscape logs [REMOTE]`](#zimscape-logs-remote)
 * [`zimscape ls`](#zimscape-ls)
 * [`zimscape push [REMOTE]`](#zimscape-push-remote)
-
-## `zimscape help [COMMAND]`
-
-display help for zimscape
-
-```
-USAGE
-  $ zimscape help [COMMAND]
-
-ARGUMENTS
-  COMMAND  command to show help for
-
-OPTIONS
-  --all  see all commands in CLI
-```
-
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts)_
+* [`zimscape logs [REMOTE]`](#zimscape-logs-remote)
 
 ## `zimscape login`
 
 Login to zimscape.com
 
 ```
-USAGE
-  $ zimscape login
-
-OPTIONS
-  -h, --help  show CLI help
-
 EXAMPLE
-  $ zimscape login
+$ zimscape login
+Login in to your Zimscape.com account
+Account email: email@gmail.com
+Password: *********
+one moment please...
+Login successful :)
 ```
-
-_See code: [src/commands/login.ts](https://github.com/vuskhoza/zimscape-cli/blob/v0.0.5/src/commands/login.ts)_
-
-## `zimscape logs [REMOTE]`
-
-Tail logs from a zimscape.com environment
-
-```
-USAGE
-  $ zimscape logs [REMOTE]
-
-EXAMPLE
-  $ zimscape logs php.domain.com
-```
-
-_See code: [src/commands/logs.ts](https://github.com/vuskhoza/zimscape-cli/blob/v0.0.5/src/commands/logs.ts)_
 
 ## `zimscape ls`
 
 List development environments on Zimscape.com
 
 ```
-USAGE
-  $ zimscape ls
-
-OPTIONS
-  -h, --help  show CLI help
-
 EXAMPLE
-  $ zimscape envs
-```
+$ zimscape ls
+one moment please...
+Product   Project                       Domain                        Type       Status 
+PHP       zimscape.com                  php.zimscape.com              staging    active 
 
-_See code: [src/commands/ls.ts](https://github.com/vuskhoza/zimscape-cli/blob/v0.0.5/src/commands/ls.ts)_
+```
 
 ## `zimscape push [REMOTE]`
 
 Use git to push current code base to chosen environment
 
 ```
-USAGE
-  $ zimscape push [REMOTE]
-
 EXAMPLE
-  $ zimscape push project.domain
+$ zimscape push php.zimscape.com
+one moment please...
+Reset branch 'staging'
+remote: Ref refs/heads/staging received. Deploying 'staging' branch...        
+remote: Already on 'staging'        
+remote: Ref refs/heads/staging received and successfully deployed to staging        
+To gitserver.zimscape.com:php-project.git
+   303588a..b2e830e  staging -> staging
+
 ```
 
-_See code: [src/commands/push.ts](https://github.com/vuskhoza/zimscape-cli/blob/v0.0.5/src/commands/push.ts)_
+## `zimscape logs [REMOTE]`
+
+List development environments on Zimscape.com
+
+```
+EXAMPLE
+$ zimscape logs php.zimscape.com
+one moment please...
+Sun Apr 19 12:36:31 UTC 2020 Ref refs/heads/staging received. Deploying 'staging' branch...
+Sun Apr 19 12:36:31 UTC 2020 Ref refs/heads/staging received and successfully deployed to staging
+
+```
+
 <!-- commandsstop -->
