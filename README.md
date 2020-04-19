@@ -81,7 +81,7 @@ To gitserver.zimscape.com:php-project.git
 
 ## `zimscape logs [REMOTE]`
 
-List development environments on Zimscape.com
+Tail logs for chosen environment
 
 ```
 EXAMPLE
